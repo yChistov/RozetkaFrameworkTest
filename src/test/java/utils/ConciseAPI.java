@@ -18,7 +18,7 @@ public abstract class ConciseAPI {
         getWebDriver().get(url);
     }
 
-    public void move(String firstResult, String secondResult){
+    public void step(By firstResult, By secondResult){
         getAction().moveToElement($(firstResult)).build().perform();
         getAction().moveToElement($(secondResult)).click().build().perform();
     }

@@ -19,7 +19,7 @@ public class HomePage extends BasePage {
     }
 
     public void move(){
-
+        step(".#m-main-ul>li:nth-child(2)", ".f-menu-pop-l>li:nth-child(1)>a[href=\"http://rozetka.com.ua/mobile-phones/c80003/filter/\"]");
     }
 
     public void searchMore(String text){

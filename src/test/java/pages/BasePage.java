@@ -11,18 +11,20 @@ public class BasePage extends ConciseAPI {
     public WebDriver getWebDriver() {
         return driver;
     }
+
     @Override
     public Actions getAction() {
-        return actions;
+        return action;
     }
 
     public BasePage(WebDriver driver){
         this.driver = driver;
+        action = new Actions(driver);
         PageFactory.initElements(driver, this);
     }
 
     private WebDriver driver;
-    private Actions actions;
+    private Actions action;
 }
 
 
